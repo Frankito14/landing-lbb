@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>LBB English | Learn Beyond Borders</title>
+    <link rel="icon" type="image/png" href="./img/icon1.png">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "inverse-surface": "#3d2d26",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#261812",
+                        "on-tertiary-container": "#003155",
+                        "secondary-container": "#d7e4ec",
+                        "on-surface-variant": "#5a4136",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#e3bfb1",
+                        "primary-fixed-dim": "#ffb596",
+                        "surface-container": "#ffe9e1",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#9ccaff",
+                        "tertiary-fixed": "#d0e4ff",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#5a666d",
+                        "secondary-fixed-dim": "#bbc8d0",
+                        "on-error-container": "#93000a",
+                        "secondary": "#546067",
+                        "surface-bright": "#fff8f6",
+                        "error": "#ba1a1a",
+                        "on-surface": "#261812",
+                        "surface-dim": "#f0d4ca",
+                        "on-tertiary-fixed-variant": "#00497b",
+                        "secondary-fixed": "#d7e4ec",
+                        "surface-container-high": "#fee2d8",
+                        "tertiary": "#0062a1",
+                        "surface-tint": "#a33e00",
+                        "outline": "#8e7164",
+                        "surface-variant": "#f8ddd2",
+                        "on-primary-fixed": "#360f00",
+                        "on-primary": "#ffffff",
+                        "primary": "#a33e00",
+                        "inverse-on-surface": "#ffede7",
+                        "surface-container-highest": "#f8ddd2",
+                        "background": "#fff8f6",
+                        "surface-container-low": "#fff1ec",
+                        "on-primary-container": "#561d00",
+                        "primary-fixed": "#ffdbcd",
+                        "on-secondary-fixed-variant": "#3c494f",
+                        "primary-container": "#ff6600",
+                        "inverse-primary": "#ffb596",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed": "#111d23",
+                        "tertiary-container": "#009cfc",
+                        "on-primary-fixed-variant": "#7c2e00",
+                        "surface": "#fff8f6",
+                        "on-tertiary-fixed": "#001d35"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fff8f6;
+            color: #261812;
+        }
+
+        .scholar-logo {
+            height: 48px;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background selection:bg-primary-container selection:text-on-primary-container">
+    <!-- NavBar -->
+    <nav class="fixed top-0 w-full z-50 bg-[#ffffff]/80 backdrop-blur-md shadow-sm">
+        <div class="flex justify-between items-center px-8 py-3 max-w-7xl mx-auto">
+            <div class="flex items-center">
+                <a href="./index.html">
+                    <img alt="LBB English Logo" class="scholar-logo w-auto h-16" data-alt="Logo de LBB English"
+                        src="./img/logo.png" />
+                </a>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-manrope text-sm font-semibold tracking-tight">
+                <a class="text-[#546067] hover:text-[#ff6600] transition-colors duration-300" href="#cursos">Cursos</a>
+                <a class="text-[#546067] hover:text-[#ff6600] transition-colors duration-300" href="#sede">Sede</a>
+                <a class="text-[#546067] hover:text-[#ff6600] transition-colors duration-300"
+                    href="#inscripcion">Inscripción</a>
+                <a class="text-[#546067] hover:text-[#ff6600] transition-colors duration-300"
+                    href="#ubicacion">Ubicación</a>
+            </div>
+            <a href="./inscripcion.html"
+                class="bg-primary-container text-white px-6 py-2.5 rounded-xl font-bold scale-95 active:opacity-80 transition-transform hover:shadow-md hover:bg-">
+                Inscribirse
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24">
+
+        <!-- Hero -->
+        <section
+            class="relative px-8 py-16 md:py-24 overflow-hidden max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="z-10">
+                <span class="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Learn Beyond
+                    Borders</span>
+                <h1 class="text-5xl md:text-6xl font-extrabold tracking-tighter text-on-surface mb-6 leading-[1.1]">
+                    Academia de Inglés en <span class="text-primary">Hurlingham</span>
+                </h1>
+                <p class="text-lg md:text-xl text-secondary leading-relaxed mb-10 max-w-xl">
+                    Inglés para comunicarte con confianza. Clases prácticas y dinámicas para niños, adolescentes y
+                    adultos.
+                </p>
+                <div class="grid grid-cols-2 gap-4 mb-10">
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <span class="material-symbols-outlined text-primary" data-icon="language">language</span>
+                        <span class="text-sm font-medium">UK &amp; US English</span>
+                    </div>
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <span class="material-symbols-outlined text-primary" data-icon="forum">forum</span>
+                        <span class="text-sm font-medium">Conversación</span>
+                    </div>
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <span class="material-symbols-outlined text-primary"
+                            data-icon="record_voice_over">record_voice_over</span>
+                        <span class="text-sm font-medium">Pronunciación</span>
+                    </div>
+                    <div class="flex items-center gap-3 justify-center md:justify-start">
+                        <span class="material-symbols-outlined text-primary" data-icon="analytics">analytics</span>
+                        <span class="text-sm font-medium">Seguimiento</span>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://api.whatsapp.com/send/?phone=5491168932342&text=Hola+LBB+English%2C+quiero+info+de+cursos.&type=phone_number&app_absent=0"
+                        target="_blank"
+                        class="flex-grow md:grow-0 bg-primary-container text-on-primary font-bold px-8 py-4 rounded-xl shadow-lg flex items-center justify-center gap-2 hover:opacity-90 transition-opacity">
+                        <img src="https://cdn.simpleicons.org/whatsapp/ffffff" class="w-5 h-5 " alt="WhatsApp">
+                        Escribinos por WhatsApp
+                    </a>
+                    <a href="https://www.google.com/maps?q=Arturo%20Jauretche%201592%20Hurlingham%205%20Esquinas"
+                        target="_blank"
+                        class="bg-surface-container-highest text-primary font-bold px-8 py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-surface-container-high transition-colors">
+                        <img src="https://cdn.simpleicons.org/googlemaps/a33e00" class="w-5 h-5" alt="Google Maps">
+                        Ver ubicación
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl"></div>
+                <div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl transition-transform duration-500">
+                    <img class="w-full h-[500px] object-cover"
+                        data-alt="Estudiantes universitarios sonriendo en un aula moderna"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJhsUTdqHbWWwSLJ8AS1mqRFqa05vVr2htp7aRLfgWytFvChxTGCFZyidi5HhK_UvutOpSd6JrJORMzKTgTGosGid_bu9z0EKjC8pjI4Tn56GFOo2Go36R4ddavA9LMOnFvtYG6lDoCYj-s4LQFJWZYG6H_4dF9kJw_bkx-ag32daIu1NsJOUWZj80Ag71U3kjwl_3TvbpGrouxucaF9I1LkKl1OVF-AMv4VDRl1XlsNhD44NisIVZKmdbswB5FBRRLkdfFRfdM2pB" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Inscripción 2026 -->
+        <section class="bg-white py-24" id="inscripcion">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <span
+                            class="bg-primary-container/10 text-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest mb-6 inline-block">Ciclo
+                            Lectivo 2026</span>
+                        <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">Inscripción Abierta</h2>
+                        <p class="text-lg text-secondary leading-relaxed mb-6">
+                            Estamos preparando todo para el ciclo lectivo 2026, que comenzará muy pronto. La fecha de
+                            inicio se confirmará a la brevedad.
+                        </p>
+                        <div class="bg-surface-container-low p-6 rounded-2xl border-l-4 border-primary mb-8">
+                            <p class="text-on-surface-variant font-medium">Fecha estimada de inicio:</p>
+                            <p class="text-xl font-bold text-primary">Entre el 16/03/2026 y el 06/04/2026</p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="./inscripcion.html"
+                                class="bg-primary text-white px-8 py-4 rounded-xl font-bold hover:bg-on-primary-container transition-all shadow-md text-center md:text-left">
+                                Ir al formulario de inscripción
+                            </a>
+                            <a href="#cursos"
+                                class="border-2 border-outline-variant text-on-surface-variant px-8 py-4 rounded-xl font-bold hover:bg-surface-container-high transition-colors text-center md:text-left">
+                                Ver cursos
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="aspect-square bg-primary/5 rounded-[3rem] flex items-center justify-center">
+                            <img src="https://teacherrecord.com/blog/blog/uploads/images/topics/202102/04/2_1612417365_xEQqnfy3hR.jpg"
+                                class="w-full h-full object-cover">
+                        </div>
+                        <div
+                            class="absolute bottom-10 left-10 right-10 bg-white/90 backdrop-blur p-6 rounded-2xl shadow-xl border border-primary/10">
+                            <p class="text-sm font-bold text-secondary uppercase mb-2">Cupos Limitados</p>
+                            <p class="text-sm text-secondary">Asegurá tu lugar completando el formulario online hoy
+                                mismo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Nuestra Sede-->
+        <section class="py-24 max-w-7xl mx-auto px-8" id="sede">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="grid grid-cols-1 gap-6">
+                    <img class="rounded-[2.5rem] h-[500px] w-full object-cover shadow-2xl"
+                        data-alt="Interior de nuestra sede moderna"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeS5cw3BmOSMHyBFVZEeqV0ief7ZthOqfB21SzalrE9dRluWsCaCGNbJPQiZojawFTiDG1O7K2toPxqJukUHJFWPF95K7_P-fsRloRZSVyF0e8YRkxUV3TD435tLLF7eO7YpYxsbxTxha3z0DVF7lIgcQua4Gyi-GoVU-j2zS4-Y8MRpmWyIi73VkN5iZIowlslX93BhrJk0AN5dAvV1Gw9v5kOzkdi0n0ZU-kcp6BKm5oNXywglvvCMcGY8l3qna1MoSW0_M3Z3UE" />
+                </div>
+                <div>
+                    <h2 class="text-4xl font-extrabold tracking-tight mb-6">Nuestra sede</h2>
+                    <p class="text-lg text-secondary mb-10 leading-relaxed">
+                        Un espacio cómodo y diseñado exclusivamente para el aprendizaje, ubicado estratégicamente en el
+                        corazón de Hurlingham.
+                    </p>
+                    <div class="space-y-8">
+                        <div class="flex gap-6 items-start">
+                            <div class="bg-primary-fixed p-3 rounded-full shrink-0">
+                                <span class="material-symbols-outlined text-primary"
+                                    data-icon="meeting_room">meeting_room</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Infraestructura Dedicada</h4>
+                                <ul class="text-secondary space-y-1 list-disc list-inside">
+                                    <li>Recepción para atención y espera</li>
+                                    <li>3 aulas para clases individuales o grupales</li>
+                                    <li>Distribución ideal para turnos y grupos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex gap-6 items-start">
+                            <div class="bg-tertiary-fixed p-3 rounded-full shrink-0">
+                                <span class="material-symbols-outlined text-tertiary" data-icon="train">train</span>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Fácil Acceso</h4>
+                                <ul class="text-secondary space-y-1">
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Cerca de varias líneas
+                                        de colectivos</li>
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Estación Rubén Darío
+                                        (FFCC Urquiza)</li>
+                                    <li class="flex items-center gap-2"><span
+                                            class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Estación Hurlingham
+                                        (FFCC San Martín)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Cursos -->
+        <section class="py-24 bg-surface-container-low" id="cursos">
+            <div class="max-w-7xl mx-auto px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold tracking-tight mb-4">Cursos</h2>
+                    <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Children -->
+                    <div class="bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-primary-fixed rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl text-primary"
+                                data-icon="child_care">child_care</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Children</h3>
+                        <p class="text-secondary leading-relaxed mb-8">
+                            Aprendizaje lúdico y bases sólidas para los más pequeños.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-surface-variant w-full">
+                            <span class="text-sm font-bold text-primary">4 a 11 años</span>
+                        </div>
+                    </div>
+                    <!-- Teens -->
+                    <div class="bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-primary-fixed rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl text-primary"
+                                data-icon="groups_2">groups_2</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Teens</h3>
+                        <p class="text-secondary leading-relaxed mb-8">
+                            Fluidez + gramática aplicada para adolescentes con visión de futuro.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-surface-variant w-full ">
+                            <span class="text-sm font-bold text-primary ">12 a 17 años</span>
+                        </div>
+                    </div>
+                    <!-- Adults -->
+                    <div class="bg-surface-container-lowest p-10 rounded-[2rem] flex flex-col items-center text-center">
+                        <div class="w-20 h-20 bg-primary-fixed rounded-full flex items-center justify-center mb-6">
+                            <span class="material-symbols-outlined text-3xl text-primary" data-icon="work">work</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Adults</h3>
+                        <p class="text-secondary  leading-relaxed mb-8">
+                            Conversación real diseñada para el trabajo, viajes y desarrollo profesional.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-surface-variant w-full">
+                            <span class="text-sm font-bold text-primary">+18 años</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Misión -->
+        <section class="py-24 max-w-7xl mx-auto px-8">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="flex-1 space-y-8">
+                    <h2 class="text-4xl font-extrabold tracking-tight">Nuestra Misión</h2>
+                    <p class="text-lg text-secondary leading-relaxed">
+                        En LBB English, entendemos el idioma no solo como una materia de estudio, sino como una <span
+                            class="text-on-surface font-bold italic">herramienta real para la vida</span>. Nuestro
+                        enfoque integral desarrolla las habilidades necesarias para un mundo globalizado.
+                    </p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div class="flex flex-col gap-2">
+                            <div class="h-1 bg-tertiary-container w-full rounded-full"></div>
+                            <h5 class="font-bold">Listening</h5>
+                            <p class="text-xs text-secondary">Comprensión auditiva profunda</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="h-1 bg-primary w-full rounded-full"></div>
+                            <h5 class="font-bold">Speaking</h5>
+                            <p class="text-xs text-secondary">Fluidez y articulación clara</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="h-1 bg-tertiary-container w-full rounded-full"></div>
+                            <h5 class="font-bold">Reading</h5>
+                            <p class="text-xs text-secondary">Interpretación de textos</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="h-1 bg-primary w-full rounded-full"></div>
+                            <h5 class="font-bold">Writing</h5>
+                            <p class="text-xs text-secondary">Expresión escrita formal e informal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 bg-surface-container-highest p-4 rounded-[3rem]">
+                    <img class="rounded-[2.5rem] w-full h-[400px] object-cover"
+                        data-alt="Persona trabajando con auriculares frente a una laptop"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQLazXQ5Vyor9Yu1d9mdQ_E3bw4s6mwvBXZJXjijYYBXjK2rzCdNsGCssl3gOfLJeEq4u0ZBL9XMGoym_xEeDdYglImn-FTIhp_X9r1fvTXj-h3z-AMM7a6QBMei93MOH4LuqJw87QnXm9Nazj3J6sSybXF-c8AQOjxvUFMKGnupUKKczse3KHL4XYifOR-q95bkxNfXXEzldJeQ13FrtfVbZAhV5zS_SjA2XI1d9U9RlTJyU-Zv_1DXQEO1nXi-NUELjADj_FEWyJ" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Ubicación -->
+        <section class="py-24 bg-surface-container-low" id="ubicacion">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="text-center mb-8">
+                    <h2 class="text-4xl font-extrabold tracking-tight mb-4">Nuestra Ubicación</h2>
+                    <div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+                </div>
+                <div>
+                    <div class="w-full h-[450px] rounded-full">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4484427130596!2d-58.63863732505879!3d-34.59282017295819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb937a1115d0d%3A0x861a8045df51abb3!2sArturo%20Jauretche%201592%2C%20B1686%20Hurlingham%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1770758199260!5m2!1ses!2sar"
+                            class="map w-full h-full border-0 rounded-sm" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" allowfullscreen="true"
+                            data-alt="Mapa de Google mostrando la ubicación de nuestra sede en Arturo Jauretche 1592, Hurlingham">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#f2ebe9] py-10">
+        <div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex flex-col items-center md:items-start gap-2">
+                <p class="text-sm font-manrope text-[#546067]">
+                    ©
+                    <script>document.write(new Date().getFullYear())</script> LBB English | Learn Beyond Borders.
+                </p>
+                <p class="text-xs text-[#546067]/70">
+                    Arturo Jauretche 1592, Hurlingham, Buenos Aires.
+                </p>
+            </div>
+            <div class="flex gap-6">
+                <a class="text-[#a33e00] hover:text-[#ff6600] transition-transform hover:scale-110 duration-200 flex items-center gap-2"
+                    href="https://api.whatsapp.com/send/?phone=5491168932342&text=Hola+LBB+English%2C+quiero+info+de+cursos.&type=phone_number&app_absent=0"
+                    target="_blank">
+                    <img src="https://cdn.simpleicons.org/whatsapp/a33e00" class="w-5 h-5" alt="WhatsApp">
+                    <span class="text-xs font-bold">WhatsApp</span>
+                </a>
+
+                <a class="text-[#a33e00] hover:text-[#ff6600] transition-transform hover:scale-110 duration-200 flex items-center gap-2"
+                    href="https://www.instagram.com/learnbeyondborders.ar/" target="_blank">
+                    <img src="https://cdn.simpleicons.org/instagram/a33e00" class="w-5 h-5" alt="Instagram">
+                    <span class="text-xs font-bold">Instagram</span>
+                </a>
+
+                <a class="text-[#a33e00] hover:text-[#ff6600] transition-transform hover:scale-110 duration-200 flex items-center gap-2"
+                    href="https://x.com/LearnBeyond_arg" target="_blank">
+                    <img src="https://cdn.simpleicons.org/x/a33e00" class="w-5 h-5" alt="X">
+                    <span class="text-xs font-bold">X</span>
+                </a>
+
+                <a class="text-[#a33e00] hover:text-[#ff6600] transition-transform hover:scale-110 duration-200 flex items-center gap-2"
+                    href="https://www.google.com/maps?q=Arturo%20Jauretche%201592%20Hurlingham%205%20Esquinas"
+                    target="_blank">
+                    <img src="https://cdn.simpleicons.org/googlemaps/a33e00" class="w-5 h-5" alt="Google Maps">
+                    <span class="text-xs font-bold">Google Maps</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
